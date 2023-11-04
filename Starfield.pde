@@ -40,7 +40,7 @@ fill(myColor);
 ellipse((float)myX,(float)myY,mySize,mySize);
 }
 
-class OddballParticle //inherits from Particle
+class OddballParticle extends Particle//inherits from Particle
 {
 fill(myColor);
 rect(myX,myY,mySize,mySize);
