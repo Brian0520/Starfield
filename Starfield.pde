@@ -23,15 +23,6 @@ class Ball {
  if(myX>950)
  myX = 500;
 myY = 500;
-  if(myX<-50)
-  myX = 500
-  myY = 500
-  if(myY<-50)
-  myX = 500
-  myY = 500
-  if(myY>950)
-  myX = 500
-  myY = 500
  }  
 }
 
