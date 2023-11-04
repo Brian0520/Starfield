@@ -2,8 +2,7 @@ class Ball {
   int myWidth, myHeight, myColor;
   double myX, myY, mySpeed, myAngle;
   Ball() {
-  myX = (Math.random()*1000);
-  myY = (Math.random()*1000);
+  myX = myY = 500
   myWidth = 30;
   myHeight = 20;
   mySpeed = (Math.random()*20)-10;
@@ -22,7 +21,17 @@ class Ball {
  myX = myX + Math.cos(myAngle) * mySpeed;
  myY = myY + Math.sin(myAngle) * mySpeed;
  if(myX>950)
- myX = -150;
+ myX = 500;
+myY = 500;
+  if(myX<-50)
+  myX = 500
+  myY = 500
+  if(myY<-50)
+  myX = 500
+  myY = 500
+  if(myY>950)
+  myX = 500
+  myY = 500
  }  
 }
 
