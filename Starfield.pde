@@ -20,8 +20,8 @@ parts[i].move();
 }
 }
 class Particle
-double myX,myY,myAngle,mySpeed,mySize;
-int myColor;
+double myX,myY,myAngle,mySpeed;
+int myColor,mySize;
 Particle()
 {
 myX = myY =200;
@@ -37,7 +37,7 @@ myY = myY + Math.sin(myAngle) * mySpeed;
 void show ()
 {
 fill(myColor);
-ellipse(myX,myY,mySize,mySize);
+ellipse((float)myX,(float)myY,mySize,mySize);
 }
 
 class OddballParticle //inherits from Particle
