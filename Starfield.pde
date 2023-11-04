@@ -19,7 +19,8 @@ class Ball {
  }
   
  void move() {
- myX = myX + mySpeed;
+ myX = myX + Math.cos(myAngle) * mySpeed;
+ myY = myY + Math.sin(myAngle) * mySpeed;
  if(myX>950)
  myX = -150;
  }  
